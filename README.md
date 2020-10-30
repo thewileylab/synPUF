@@ -19,7 +19,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
   - [Information on the SynPUF data source is available
     here](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF.html)
   - [CDM 5.2.2 DDL for the OHDSI supported DBMSs is available
-    here](https://github.com/OHDSI/CommonDataModel/tree/v5.2.2)
+    here](https://github.com/OHDSI/CommonDataModel/blob/v5.2.2/PostgreSQL/OMOP%20CDM%20ddl%20-%20PostgreSQL.sql)
 
 Install the development version from
 [GitHub](https://github.com/thewileylab/synPUF) with:
