@@ -7,7 +7,7 @@
 \format{
 A data frame with 8007 rows and 10 variables:
 \describe{
-\item{concept_name}{}
+\item{concept_name}{An unambiguous, meaningful and descriptive name for the Concept. }
 \item{domain_id}{A foreign key to the DOMAIN table the Concept belongs to.}
 \item{vocabulary_id}{A foreign key to the VOCABULARY table indicating from which source the Concept has been adapted. }
 \item{concept_class_id}{The attribute or concept class of the Concept. Examples are ‘Clinical Drug’, ‘Ingredient’, ‘Clinical Finding’ etc.}
