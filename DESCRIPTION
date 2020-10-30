@@ -1,15 +1,15 @@
-Package: synpuf
+Package: synPUF
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "David",
-           family = "Mayer",
-           role = c("aut", "cre"),
-           email = "david.mayer@cuanschutz.edu")
+Authors@R: c( 
+            person(given = "David", family = "Mayer", role = c("aut", "cre"), email = "david.mayer@cuanschutz.edu"),
+            person(given = "The Wiley Lab", role = c("cph", "fnd"))
+            )
 Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Depends: 
+    R (>= 3.5.0)
