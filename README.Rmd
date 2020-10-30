@@ -36,7 +36,7 @@ devtools::install_github("thewileylab/synPUF")
 ```
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example:
 
 ```{r example}
 library(synPUF)
