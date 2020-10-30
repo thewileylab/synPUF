@@ -20,7 +20,7 @@ save_synpuf_rda <- function(sql_file, csv_file, output_dir) {
     mutate(value = str_trim(value),
            value = str_remove(value, ',')) %>%
     separate(col = value, into = c('names','values','nullable'),sep = '\t+| +',fill = 'right', extra = 'drop') %>%
-    mutate(values = case_when(values == 'INTEGER' ~ 'd',
+    mutate(values = case_when(values == 'INTEGER' ~ 'i',
                               stringr::str_detect(values, 'VARCHAR') ~ 'c', ## any VARCHAR* fields (VARCHAR(1), VARCHAR(3), VARCHAR(MAX), etc.)
                               values == 'DATE' ~ 'D',
                               values == 'FLOAT' ~ 'd',
