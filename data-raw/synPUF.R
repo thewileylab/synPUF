@@ -76,14 +76,25 @@ filter_concept_rda <- function(concept_table){
   temp <- table %>%
     select(contains('concept_id'))
   if(ncol(temp) > 0) {
-    table <- table %>%
+    temp_table <- table %>%
       rownames_to_column() %>%
       pivot_longer(cols = contains('concept_id'),names_to = 'concept_id_col') %>%
-      filter(value %in% distinct_concepts$concept_id) %>%
-      pivot_wider(names_from = concept_id_col, values_from = value) %>%
-      select(-rowname)
-    assign(x = table_name, value = table)
-    save(list=table_name, file = glue('data/{basename(concept_table)}'), compress = 'bzip2')
+      filter(value %in% distinct_concepts$concept_id)
+    if(nrow(temp_table) > 0 ) {
+      table <- temp_table %>%
+        pivot_wider(names_from = concept_id_col, values_from = value) %>%
+        select(-rowname)
+      assign(x = table_name, value = table)
+      save(list=table_name, file = glue('data/{basename(concept_table)}'), compress = 'bzip2')
+    } else {
+      table <- colnames(table) %>%
+        as_tibble() %>%
+        mutate(blank = NA_character_) %>%
+        pivot_wider(names_from = value, values_from = blank) %>%
+        tidyr::drop_na()
+      assign(x = table_name, value = table)
+      save(list=table_name, file = glue('data/{basename(concept_table)}'), compress = 'bzip2')
+    }
   }
 }
 
