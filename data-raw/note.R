@@ -12,7 +12,7 @@ save_synpuf_rda <- function(sql_file, csv_file, output_dir) {
     mutate(value = str_trim(value),
            value = str_remove(value, ',')) %>%
     separate(col = value, into = c('names','values','nullable'),sep = '\t+| +',fill = 'right', extra = 'drop') %>%
-    mutate(values = case_when(values == 'INTEGER' ~ 'd',
+    mutate(values = case_when(values == 'INTEGER' ~ 'i',
                               stringr::str_detect(values, 'VARCHAR') ~ 'c', ## any VARCHAR* fields (VARCHAR(1), VARCHAR(3), VARCHAR(MAX), etc.)
                               values == 'DATE' ~ 'D',
                               values == 'FLOAT' ~ 'd',
@@ -32,14 +32,14 @@ save_synpuf_rda <- function(sql_file, csv_file, output_dir) {
   save(list=table_name, file = glue::glue('{output_dir}/{filename}.rda'))
 }
 
-save_synpuf_rda(sql_file = 'data-raw/sql/note.sql',csv_file = 'data-raw/csv/note.csv',output_dir = 'data')
+save_synpuf_rda(sql_file = 'data-raw/sql/note.sql',csv_file = 'data-raw/csv/note.csv', output_dir = 'data')
 
 # Randomly Assign SynPUF Person ID's to notes
-load('~/data/output/note.rda')
-load('~/data/output/person.rda')
+load('data/note.rda')
+load('data/person.rda')
 set.seed(2020) ## ahhh
 note <- note %>%
-  sample_frac(0.25) %>%
+  sample_frac(0.20) %>%
   mutate(new_person_id = sample(person$person_id, n(), replace = T)) %>%
   select(-person_id) %>%
   rename('person_id' = new_person_id) %>%
