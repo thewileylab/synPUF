@@ -3,3 +3,5 @@
 ^LICENSE\.md$
 ^data-raw$
 .DS_Store
+^README\.Rmd$
+^CODE_OF_CONDUCT\.md$
