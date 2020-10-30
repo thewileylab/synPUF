@@ -1,2 +1,5 @@
 ^synpuf\.Rproj$
 ^\.Rproj\.user$
+^LICENSE\.md$
+^data-raw$
+.DS_Store
