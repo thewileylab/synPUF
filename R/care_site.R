@@ -12,7 +12,6 @@
 #'   \item{care_site_source_value}{The identifier for the Care Site in the source data, stored here for reference.}
 #'   \item{place_of_service_source_value}{The source code for the Place of Service as it appears in the source data, stored here for reference.}
 #'   \item{value}{}
-
 #'   ...
 #' }
 #' @source \url{https://ohdsi.github.io/CommonDataModel/cdm531.html#care_site}
