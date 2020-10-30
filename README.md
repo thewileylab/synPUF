@@ -31,7 +31,7 @@ devtools::install_github("thewileylab/synPUF")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example:
 
 ``` r
 library(synPUF)
@@ -39,7 +39,7 @@ suppressMessages(library(tidyverse))
 person
 #> # A tibble: 50 x 18
 #>    person_id gender_concept_… year_of_birth month_of_birth day_of_birth
-#>        <dbl>            <dbl>         <dbl>          <dbl>        <dbl>
+#>        <int>            <int>         <int>          <int>        <int>
 #>  1      3736             8532          1933              2            1
 #>  2     10872             8507          1933             11            1
 #>  3     10969             8507          1959             12            1
@@ -51,11 +51,11 @@ person
 #>  9     37805             8507          1937              6            1
 #> 10     40221             8507          1981              8            1
 #> # … with 40 more rows, and 13 more variables: birth_datetime <dttm>,
-#> #   race_concept_id <dbl>, ethnicity_concept_id <dbl>, location_id <dbl>,
-#> #   provider_id <dbl>, care_site_id <dbl>, person_source_value <chr>,
-#> #   gender_source_value <chr>, gender_source_concept_id <dbl>,
-#> #   race_source_value <chr>, race_source_concept_id <dbl>,
-#> #   ethnicity_source_value <chr>, ethnicity_source_concept_id <dbl>
+#> #   race_concept_id <int>, ethnicity_concept_id <int>, location_id <int>,
+#> #   provider_id <int>, care_site_id <int>, person_source_value <chr>,
+#> #   gender_source_value <chr>, gender_source_concept_id <int>,
+#> #   race_source_value <chr>, race_source_concept_id <int>,
+#> #   ethnicity_source_value <chr>, ethnicity_source_concept_id <int>
 ```
 
 ## Code of Conduct
