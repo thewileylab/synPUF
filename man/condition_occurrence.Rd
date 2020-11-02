@@ -5,7 +5,7 @@
 \alias{condition_occurrence}
 \title{condition_occurrence}
 \format{
-A data frame with XX rows and XX variables:
+A data frame with 5121 rows and 15 variables:
 \describe{
 \item{condition_occurrence_id}{The unique key given to a condition record for a person. Refer to the ETL for how duplicate conditions during the same visit were handled. }
 \item{person_id}{The PERSON_ID of the PERSON for whom the condition is recorded.}
