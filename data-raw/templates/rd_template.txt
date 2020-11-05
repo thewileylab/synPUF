@@ -1,0 +1,14 @@
+#' {table_name}
+#'
+#' @description
+#'
+#' @docType data
+#'
+#' @format A data frame with {nrow} rows and {nvar} variables:
+#' \describe{{
+{items}
+#'   ...
+#' }}
+#' @source \url{{https://ohdsi.github.io/CommonDataModel/cdm531.html#{table_name} }}
+"{table_name}"
+
