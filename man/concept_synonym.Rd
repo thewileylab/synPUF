@@ -5,16 +5,15 @@
 \alias{concept_synonym}
 \title{concept_synonym}
 \format{
-A data frame with XX rows and XX variables:
+A data frame with 17519 rows and 2 variables:
 \describe{
-\item{concept_id }{}
-\item{concept_synonym_name}{}
-\item{language_concept_id}{}
+\item{concept_synonym_name}{\emph{character}}
+\item{concept_id}{\emph{integer}}
 ...
 }
 }
 \source{
-\url{https://ohdsi.github.io/CommonDataModel/cdm531.html#concept_synonym}
+\url{https://ohdsi.github.io/CommonDataModel/cdm531.html#concept_synonym }
 }
 \usage{
 concept_synonym

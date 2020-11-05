@@ -1,1 +1,1 @@
-#'   \item{{{variable}}}{{\emph{{{class}}}: }}
+#'   \item{{{variable}}}{{\emph{{{class}}}}}

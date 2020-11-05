@@ -7,17 +7,17 @@
 \format{
 A data frame with 3465 rows and 6 variables:
 \describe{
-\item{condition_era_id}{}
-\item{person_id}{}
-\item{condition_concept_id}{The Concept Id representing the Condition. }
-\item{condition_era_start_date}{The start date for the Condition Era constructed from the individual instances of Condition Occurrences. It is the start date of the very first chronologically recorded instance of the condition with at least 31 days since any prior record of the same Condition. }
-\item{condition_era_end_date }{The end date for the Condition Era constructed from the individual instances of Condition Occurrences. It is the end date of the final continuously recorded instance of the Condition. }
-\item{condition_occurrence_count}{t 	The number of individual Condition Occurrences used to construct the condition era. }
+\item{condition_era_id}{\emph{integer}}
+\item{person_id}{\emph{integer}}
+\item{condition_concept_id}{\emph{integer}}
+\item{condition_era_start_date}{\emph{Date}}
+\item{condition_era_end_date}{\emph{Date}}
+\item{condition_occurrence_count}{\emph{integer}}
 ...
 }
 }
 \source{
-\url{https://ohdsi.github.io/CommonDataModel/cdm531.html#condition_era}
+\url{https://ohdsi.github.io/CommonDataModel/cdm531.html#condition_era }
 }
 \usage{
 condition_era
