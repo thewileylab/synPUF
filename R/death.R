@@ -9,14 +9,14 @@
 #'
 #' @format A data frame with 4 rows and 7 variables:
 #' \describe{
-#'   \item{person_id}{}
-#'   \item{death_date}{The date the person was deceased. }
-#'   \item{death_datetime}{}
-#'   \item{death_type_concept_id}{This is the provenance of the death record, i.e., where it came from. It is possible that an administrative claims database would source death information from a government file so do not assume the Death Type is the same as the Visit Type, etc. }
-#'   \item{cause_concept_id}{This is the Standard Concept representing the Person’s cause of death, if available. }
-#'   \item{cause_source_value}{}
-#'   \item{cause_source_concept_id}{}
+#'   \item{person_id}{\emph{integer}}
+#'   \item{death_date}{\emph{Date}}
+#'   \item{death_datetime}{\emph{POSIXct}}
+#'   \item{death_type_concept_id}{\emph{integer}}
+#'   \item{cause_concept_id}{\emph{integer}}
+#'   \item{cause_source_value}{\emph{character}}
+#'   \item{cause_source_concept_id}{\emph{integer}}
 #'   ...
 #' }
-#' @source \url{https://ohdsi.github.io/CommonDataModel/cdm531.html#death}
+#' @source \url{https://ohdsi.github.io/CommonDataModel/cdm531.html#death }
 "death"

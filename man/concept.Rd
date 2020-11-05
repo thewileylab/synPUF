@@ -7,21 +7,21 @@
 \format{
 A data frame with 8007 rows and 10 variables:
 \describe{
-\item{concept_name}{An unambiguous, meaningful and descriptive name for the Concept. }
-\item{domain_id}{A foreign key to the DOMAIN table the Concept belongs to.}
-\item{vocabulary_id}{A foreign key to the VOCABULARY table indicating from which source the Concept has been adapted. }
-\item{concept_class_id}{The attribute or concept class of the Concept. Examples are ‘Clinical Drug’, ‘Ingredient’, ‘Clinical Finding’ etc.}
-\item{standard_concept}{This flag determines where a Concept is a Standard Concept, i.e. is used in the data, a Classification Concept, or a non-standard Source Concept. The allowable values are ‘S’ (Standard Concept) and ‘C’ (Classification Concept), otherwise the content is NULL. }
-\item{concept_code}{The concept code represents the identifier of the Concept in the source vocabulary, such as SNOMED-CT concept IDs, RxNorm RXCUIs etc. Note that concept codes are not unique across vocabularies. }
-\item{valid_start_date}{The date when the Concept was first recorded. The default value is 1-Jan-1970, meaning, the Concept has no (known) date of inception. }
-\item{valid_end_date}{The date when the Concept became invalid because it was deleted or superseded (updated) by a new concept. The default value is 31-Dec-2099, meaning, the Concept is valid until it becomes deprecated. }
-\item{invalid_reason}{Reason the Concept was invalidated. Possible values are D (deleted), U (replaced with an update) or NULL when valid_end_date has the default value.}
-\item{concept_id}{A unique identifier for each Concept across all domains.}
+\item{concept_name}{\emph{character}}
+\item{domain_id}{\emph{character}}
+\item{vocabulary_id}{\emph{character}}
+\item{concept_class_id}{\emph{character}}
+\item{standard_concept}{\emph{character}}
+\item{concept_code}{\emph{character}}
+\item{valid_start_date}{\emph{Date}}
+\item{valid_end_date}{\emph{Date}}
+\item{invalid_reason}{\emph{character}}
+\item{concept_id}{\emph{integer}}
 ...
 }
 }
 \source{
-\url{https://ohdsi.github.io/CommonDataModel/cdm531.html#concept}
+\url{https://ohdsi.github.io/CommonDataModel/cdm531.html#concept }
 }
 \usage{
 concept
