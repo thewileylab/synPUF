@@ -19,8 +19,9 @@ doc_starter <- function(table_name) {
   nrow <- nrow(table)
   nvar <- ncol(table)
   spec <- table %>%
-    dplyr::summarise_all(class) %>%
-    tidyr::gather(colname, type)
+    dplyr::summarise(across(everything(), class)) %>%
+    slice(1) %>%
+    tidyr::pivot_longer(everything(), names_to = 'colname', values_to = 'type')
   variable <- spec$colname
   class <- spec$type
   items <- glue::glue_collapse(x = map(item_template,
