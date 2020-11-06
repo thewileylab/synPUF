@@ -35,8 +35,9 @@ note
 \subsection{Table Description}{
 
 The NOTE table captures unstructured information that was recorded by a provider about a patient in free text (in ASCII, or preferably in UTF8 format) notes on a given date. The type of note_text is CLOB or varchar(MAX) depending on RDBMS.
+}
 
-ETL Conventions
+\subsection{ETL Conventions}{
 
 HL7/LOINC CDO is a standard for consistent naming of documents to support a range of use cases: retrieval, organization, display, and exchange. It guides the creation of LOINC codes for clinical notes. CDO annotates each document with 5 dimensions:
 \itemize{
