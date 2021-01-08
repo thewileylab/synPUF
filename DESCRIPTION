@@ -1,11 +1,11 @@
 Package: synPUF
-Title: 50 Person Subset of DE-SynPUF
+Title: 10 Person Subset of DE-SynPUF
 Version: 0.0.1.10
 Authors@R: c( 
             person(given = "David", family = "Mayer", role = c("aut", "cre"), email = "david.mayer@cuanschutz.edu"),
             person(given = "The Wiley Lab", role = c("cph", "fnd"))
             )
-Description: This package contains a 50 person subset of the CMS 2008-2010 Data Entrepreneurs’ Synthetic Public Use File (DE-SynPUF) from OHDSI.
+Description: This package contains a 10 person subset of the CMS 2008-2010 Data Entrepreneurs’ Synthetic Public Use File (DE-SynPUF) from OHDSI.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
