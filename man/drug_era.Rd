@@ -5,7 +5,7 @@
 \alias{drug_era}
 \title{drug_era}
 \format{
-A data frame with 2134 rows and 7 variables:
+A data frame with 344 rows and 7 variables:
 \describe{
 \item{drug_era_id}{\emph{integer}}
 \item{person_id}{\emph{integer}}
@@ -24,14 +24,6 @@ A data frame with 2134 rows and 7 variables:
 drug_era
 }
 \description{
-\subsection{Table Description}{
 
-A Drug Era is defined as a span of time when the Person is assumed to be exposed to a particular active ingredient. A Drug Era is not the same as a Drug Exposure: Exposures are individual records corresponding to the source when Drug was delivered to the Person, while successive periods of Drug Exposures are combined under certain rules to produce continuous Drug Eras.
-}
-
-\subsection{ETL Conventions}{
-
-The SQL script for generating DRUG_ERA records can be found here.
-}
 }
 \keyword{datasets}

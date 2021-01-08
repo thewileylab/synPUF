@@ -5,7 +5,7 @@
 \alias{drug_strength}
 \title{drug_strength}
 \format{
-A data frame with 929956 rows and 9 variables:
+A data frame with 475035 rows and 9 variables:
 \describe{
 \item{amount_value}{\emph{numeric}}
 \item{numerator_value}{\emph{numeric}}
@@ -14,8 +14,8 @@ A data frame with 929956 rows and 9 variables:
 \item{valid_start_date}{\emph{Date}}
 \item{valid_end_date}{\emph{Date}}
 \item{invalid_reason}{\emph{character}}
-\item{drug_concept_id}{\emph{integer}}
 \item{ingredient_concept_id}{\emph{integer}}
+\item{drug_concept_id}{\emph{integer}}
 ...
 }
 }
@@ -26,9 +26,6 @@ A data frame with 929956 rows and 9 variables:
 drug_strength
 }
 \description{
-\subsection{Table Description}{
 
-The DRUG_STRENGTH table contains structured content about the amount or concentration and associated units of a specific ingredient contained within a particular drug product. This table is supplemental information to support standardized analysis of drug utilization.
-}
 }
 \keyword{datasets}

@@ -5,7 +5,7 @@
 \alias{concept_synonym}
 \title{concept_synonym}
 \format{
-A data frame with 17519 rows and 2 variables:
+A data frame with 5835 rows and 2 variables:
 \describe{
 \item{concept_synonym_name}{\emph{character}}
 \item{concept_id}{\emph{integer}}
@@ -19,9 +19,6 @@ A data frame with 17519 rows and 2 variables:
 concept_synonym
 }
 \description{
-\subsection{Table Description}{
 
-The CONCEPT_SYNONYM table is used to store alternate names and descriptions for Concepts.
-}
 }
 \keyword{datasets}

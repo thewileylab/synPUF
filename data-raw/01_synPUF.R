@@ -124,14 +124,14 @@ pmap(list(process_list$sql_path,
      save_synpuf_rda
      )
 
-## 50 Person Sample ----
+## 10 Person Sample ----
 load(glue('{tempdir()}/unzipped/person.rda') )
 set.seed(2020) ## tempting fate
 subject_sample <- person %>%
-  sample_n(50) %>%
+  sample_n(10) %>%
   pull(person_id)
 
-## Limit non-concept tables to 50 person sample ----
+## Limit non-concept tables to 10 person sample ----
 rda_list <- fs::dir_ls(path = glue('{tempdir()}/unzipped'), regexp = '(.rda)$')
 pmap(list(rda_list,
           list(subject_sample),
@@ -140,7 +140,7 @@ pmap(list(rda_list,
      sample_rda
      )
 
-## Identify concepts used in 50 person sample ----
+## Identify concepts used in 10 person sample ----
 sampled_rda_list <- dir_ls('data', regexp = '(.rda)$') %>%
   enframe(name = NULL, value = 'filename') %>%
   filter(!str_detect(filename, '(concept)|(care_site)|(domain)|(drug_strength)|(location)|(provider)|(relationship)|(vocabulary)')) %>%
