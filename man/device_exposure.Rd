@@ -31,6 +31,19 @@ A data frame with 4 rows and 14 variables:
 device_exposure
 }
 \description{
+\subsection{Table Description}{
 
+The Device domain captures information about a person’s exposure to a foreign physical object or instrument which is used for diagnostic or therapeutic purposes through a mechanism beyond chemical action. Devices include implantable objects (e.g. pacemakers, stents, artificial joints), medical equipment and supplies (e.g. bandages, crutches, syringes), other instruments used in medical procedures (e.g. sutures, defibrillators) and material used in clinical care (e.g. adhesives, body material, dental material, surgical material).
+}
+
+\subsection{User Guide}{
+
+The distinction between Devices or supplies and Procedures are sometimes blurry, but the former are physical objects while the latter are actions, often to apply a Device or supply.
+}
+
+\subsection{ETL Conventions}{
+
+Source codes and source text fields mapped to Standard Concepts of the Device Domain have to be recorded here.
+}
 }
 \keyword{datasets}

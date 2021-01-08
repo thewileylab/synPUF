@@ -19,6 +19,9 @@ A data frame with 5835 rows and 2 variables:
 concept_synonym
 }
 \description{
+\subsection{Table Description}{
 
+The CONCEPT_SYNONYM table is used to store alternate names and descriptions for Concepts.
+}
 }
 \keyword{datasets}

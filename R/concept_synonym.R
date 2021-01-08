@@ -1,6 +1,9 @@
 #' concept_synonym
 #'
 #' @description
+#' ## Table Description
+#'
+#' The CONCEPT_SYNONYM table is used to store alternate names and descriptions for Concepts.
 #'
 #' @docType data
 #'
