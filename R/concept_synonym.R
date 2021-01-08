@@ -1,13 +1,10 @@
 #' concept_synonym
 #'
 #' @description
-#' ## Table Description
-#'
-#' The CONCEPT_SYNONYM table is used to store alternate names and descriptions for Concepts.
 #'
 #' @docType data
 #'
-#' @format A data frame with 17519 rows and 2 variables:
+#' @format A data frame with 5835 rows and 2 variables:
 #' \describe{
 #'   \item{concept_synonym_name}{\emph{character}}
 #'   \item{concept_id}{\emph{integer}}
