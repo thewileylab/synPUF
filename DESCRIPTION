@@ -1,6 +1,6 @@
 Package: synPUF
 Title: 50 Person Subset of DE-SynPUF
-Version: 0.0.0.9000
+Version: 0.0.1.50
 Authors@R: c( 
             person(given = "David", family = "Mayer", role = c("aut", "cre"), email = "david.mayer@cuanschutz.edu"),
             person(given = "The Wiley Lab", role = c("cph", "fnd"))
