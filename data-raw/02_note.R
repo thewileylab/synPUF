@@ -27,7 +27,7 @@ save_synpuf_rda <- function(sql_file, csv_file, output_dir) {
   names(values) <- names
   filename <- basename(sql_file) %>% str_remove('.sql')
   table_name <- filename
-  table <- vroom(file = csv_file, col_names = names, col_types = values, delim = '\t', num_threads = 1)
+  table <- vroom(file = csv_file, col_names = names, col_types = values, delim = ',', num_threads = 1, skip = 1)
   assign(x = table_name, value = table)
   save(list=table_name, file = glue::glue('{output_dir}/{filename}.rda'))
 }

@@ -20,7 +20,7 @@
 #'
 #' @docType data
 #'
-#' @format A data frame with 851 rows and 13 variables:
+#' @format A data frame with 170 rows and 13 variables:
 #' \describe{
 #'   \item{note_id}{\emph{integer}}
 #'   \item{person_id}{\emph{integer}}
